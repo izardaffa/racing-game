@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+</head>
+<!-- <body onload="startGame()"> -->
+<body>
+    <div id="start">
+        <section id="left">
+            <h1>Mobil Jagoan</h1>
+
+            <form onsubmit="startGame()" action="javascript:void(0)">
+                <input type="text" id="name" value="" placeholder="Masukkan nama" required>
+                <button type="submit">Play</button>
+            </form>
+
+            <div id="instruction">
+                <p>How to Play</p>
+                <ul>
+                    <li>Accelerate: Up Arrow key</li>
+                    <li>Brake: Down Arrow key</li>
+                    <li>Left: Left Arrow key</li>
+                    <li>Right: Right Arrow key</li>
+                    <li>Inc gear: 'D' key</li>
+                    <li>Dec gear: 'F' key</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div id="game-ui">
+        <div class="content">
+            <h2 id="playerName"></h2>
+            <h2 id="score"></h2>
+            <h2 id="speed"></h2>
+        </div>
+    </div>
+
+    <div id="game-over">
+        <div id="content">
+            <h1>Game Over</h1>
+            <h2>Result</h2>
+            <ul>
+                <li id="res-name"></li>
+                <li id="res-score"></li>
+                <li id="res-time"></li>
+            </ul>
+
+            <a href="."><button>Play Again</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
